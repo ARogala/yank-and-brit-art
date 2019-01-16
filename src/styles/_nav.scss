@@ -12,11 +12,10 @@
 
 	&__list {
 		list-style: none;
-
-
+		width: 550px;
+		margin: 0 0 0 auto;
 		//background: $hero-color1;
         //background: linear-gradient(45deg, $hero-color1 0%, $hero-color2 50%, $hero-color1 100%);
-
 	}
 
 	&__list li {
@@ -30,7 +29,7 @@
 	&__link:link, &__link:visited {
 		font-weight: bold;
 		text-decoration: none;
-		color: white;
+		color: black;
 		display: inline-block;
 		width: 100%;
 		line-height: 24px;
@@ -47,6 +46,7 @@
 
 	&__link:hover, &__link:focus {
 		outline: none;
+		color: white;
 		/*animation*/
 		background-position: 100%;
 	}
