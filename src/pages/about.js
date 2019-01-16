@@ -6,8 +6,7 @@ const About = ({data}) => {
 	const content = data.allMarkdownRemark.edges[0].node;
 	return (
 		<Layout>
-			<h2>About Me</h2>
-			<div dangerouslySetInnerHTML={{ __html: content.html }}></div>
+			<div className="about" dangerouslySetInnerHTML={{ __html: content.html }}></div>
 		</Layout>
 	);
 };

@@ -41,8 +41,8 @@ export default ({children}) => (
 					<meta name="theme-color" content="#09037d"/>
 
 		  			<link rel="shortcut icon" href={icon} />
-		  			<link href="https://fonts.googleapis.com/css?family=Mali:500,700" rel="stylesheet" />
-		  			<link href="https://fonts.googleapis.com/css?family=Dancing+Script:400,700" rel="stylesheet" />
+		  			<link href="https://fonts.googleapis.com/css?family=Petit+Formal+Script" rel="stylesheet" />
+		  			<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Serif:400,600" rel="stylesheet" />
 				</Helmet>
 
 				<header className="header">

@@ -5,6 +5,8 @@ date: 2018-10-31T00:00:00.000Z
 author: Katie Rogala
 ---
 
+<h2>About Me</h2>
+
 <p>I have always loved art and DIY. I enjoy everything from making gifts and knickknacks for the home to upcycling vintage clothing and other items. Flea markets and secondhand stores are my happy place! I am a wife, follower of Jesus, and an animal lover.</p><br/>
 
 <p>I am a social worker by profession, but I’ve always had a passion for art. As a child, my artwork was published as well as featured on NBC News as part of an incredible story on art therapy. The artwork featured on NBC was also part of a national exhibit which debuted at the Whitney Museum in New York City.</p><br/>

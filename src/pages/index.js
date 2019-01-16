@@ -7,8 +7,7 @@ const Home = ({data}) => {
 	return (
 
 		<Layout>
-			<h2>Welcome!</h2>
-			<div dangerouslySetInnerHTML={{ __html: content.html }}></div>
+			<div className="home" dangerouslySetInnerHTML={{ __html: content.html }}></div>
 		</Layout>
 	);
 };

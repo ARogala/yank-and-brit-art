@@ -46,7 +46,7 @@
 
 	&__link:hover, &__link:focus {
 		outline: none;
-		color: white;
+		color: $hero-color2;
 		/*animation*/
 		background-position: 100%;
 	}
