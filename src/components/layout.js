@@ -4,6 +4,9 @@ import { Helmet } from 'react-helmet';
 
 import icon from '../img/logoSmall.png';
 
+import logoSmall from '../img/logoSmall.jpg';
+// import logoLarge from '../img/logoLarge.png';
+
 import '../styles/main.scss';
 
 function toggleNav() {
@@ -47,6 +50,7 @@ export default ({children}) => (
 
 				<header className="header">
 					<nav className="nav">
+						<Link to="/" tabIndex="-1"><img className="nav__imgLink" src={logoSmall} alt="logo" /></Link>
 						<input type="checkbox" className="nav__checkbox" id="navi-toggle" />
 						<label htmlFor="navi-toggle" className="nav__button" aria-haspopup="true" role="button" tabIndex="0" aria-label="navigation menu" onKeyPress={()=>toggleNav()}>
 							<span className="nav__icon">&nbsp;</span>

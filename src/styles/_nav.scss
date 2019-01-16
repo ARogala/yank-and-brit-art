@@ -2,6 +2,12 @@
 
 .nav {
 
+	&__imgLink {
+		position: absolute;
+		width: 72px;
+		height: 72px;
+	}
+
 	&__checkbox {
 		display: none;
 	}
@@ -54,6 +60,10 @@
 
 @media screen and (max-width: 750px) {
 	.nav {
+
+		&__imgLink {
+			display: none;
+		}
 
 		&__button {
 			display: initial;
