@@ -1,0 +1,195 @@
+@charset "UTF-8";
+
+.nav {
+
+	&__checkbox {
+		display: none;
+	}
+
+	&__button {
+		display: none;
+	}
+
+	&__list {
+		list-style: none;
+
+
+		//background: $hero-color1;
+        //background: linear-gradient(45deg, $hero-color1 0%, $hero-color2 50%, $hero-color1 100%);
+
+	}
+
+	&__list li {
+		width: 25%;
+	}
+
+	&__item-container {
+		display: flex;
+	}
+
+	&__link:link, &__link:visited {
+		font-weight: bold;
+		text-decoration: none;
+		color: white;
+		display: inline-block;
+		width: 100%;
+		line-height: 24px;
+		padding: 24px;
+		text-align: center;
+		text-transform: uppercase;
+
+		/*animation*/
+		background: linear-gradient(145deg, transparent 0%, transparent 50%, #000000 50%);
+		background-size: 280%;
+		-webkit-transition: all .5s;
+		transition: all .5s;
+	}
+
+	&__link:hover, &__link:focus {
+		outline: none;
+		/*animation*/
+		background-position: 100%;
+	}
+}
+
+@media screen and (max-width: 750px) {
+	.nav {
+
+		&__button {
+			display: initial;
+			position: fixed;
+			width: 5rem;
+			height: 5rem;
+			top: 1rem;
+			right: 1rem;
+			box-shadow: 0 1rem 2rem rgba(0,0,0, 0.3);
+			border-radius: 10px;
+			text-align: center;
+			z-index: 20;
+
+			background: black;
+
+		}
+
+		&__button:hover {
+			cursor: pointer;
+		}
+
+		&__button:focus {
+			outline: 2px solid blue;
+		}
+
+		/*
+		span is an inline element by default so set to inline-block
+		in order to apply height and width. this builds the center bar
+		of the nav button.
+		*/
+		&__icon {
+			display: inline-block;
+			top: 2.4rem;
+			height: 3.5px;
+			width: 4rem;
+			background-color: lightgrey;
+			position: relative;
+		}
+		/*
+		build out the top and bottom bars of the nav button
+		by inserting blank content before and after the
+		center bar and setting height and width
+		*/
+		&__icon::before,
+		&__icon::after {
+			content: '';
+			display: inline-block;
+			height: 3.5px;
+			width: 4rem;
+			background-color: lightgrey;
+			position: absolute;
+
+			/*transition the rotate*/
+			-webkit-transition: transform .2s;
+			transition: transform .2s;
+		}
+		/*position the top and botton bars*/
+		&__icon::before {
+			top: 1rem;
+			right: 0;
+		}
+
+		&__icon::after {
+			top: -1rem;
+			right: 0;
+		}
+
+		/*nav span animation*/
+		&__checkbox:checked + &__button &__icon {
+			background-color: transparent;
+		}
+		/*by default things rotate about their center*/
+		&__checkbox:checked + &__button &__icon::before {
+			top: 0;
+			/*360 + 45*/
+			transform: rotate(405deg);
+		}
+
+		&__checkbox:checked + &__button &__icon::after {
+			top: 0;
+			transform: rotate(-405deg);
+		}
+
+		&__button:hover &__icon::before {
+			top: 1.2rem;
+		}
+
+		&__button:hover &__icon::after {
+			top: -1.2rem;
+		}
+
+		&__list {
+
+			background: $background-color1;
+        	background: linear-gradient(45deg, $background-color1 0%, $background-color2 50%, $background-color1 100%);
+
+			/*center the list items*/
+			display: flex;
+	  		flex-direction: column;
+	  		justify-content: center;
+
+
+			z-index: 10;
+			position: fixed;
+			left: 0;
+			width: 100%;
+			height: 100vh;
+
+	        /* This trasform moves the list off canvas. */
+		    -webkit-transform: translate(-100%, 0);
+		    transform: translate(-100%, 0);
+		    /* animate the list*/
+		    transition: transform 0.3s ease;
+		}
+
+		/*prevent tabbing when list is not checked*/
+		&__list li {
+			display: none;
+			width: 50%;
+			margin: 0 auto;
+		}
+
+		&__checkbox:checked ~ &__list li {
+			display: list-item;
+		}
+
+		/*when checkbox checked unhide/translate list*/
+		&__checkbox:checked ~ &__list {
+			-webkit-transform: translate(0, 0);
+	    	transform: translate(0, 0);
+		}
+
+		&__item-container {
+			display: initial;
+		}
+	}
+}
+
+
