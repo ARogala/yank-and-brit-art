@@ -1,0 +1,7 @@
+.header {
+	&__titleBox{
+		background: linear-gradient(to right, $hero-color1 100%, $hero-color2 100%);
+		padding: 20px;
+		text-align: center;
+	}
+}
