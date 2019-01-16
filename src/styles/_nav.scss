@@ -60,7 +60,7 @@
 			position: fixed;
 			width: 5rem;
 			height: 5rem;
-			top: 1rem;
+			bottom: 1rem;
 			right: 1rem;
 			box-shadow: 0 1rem 2rem rgba(0,0,0, 0.3);
 			border-radius: 10px;
@@ -147,8 +147,8 @@
 
 		&__list {
 
-			background: $background-color1;
-        	background: linear-gradient(45deg, $background-color1 0%, $background-color2 50%, $background-color1 100%);
+        	background: $background-color1;
+            background: linear-gradient(90deg, $background-color1 0%, $background-color2 50%, $background-color1 100%);
 
 			/*center the list items*/
 			display: flex;
