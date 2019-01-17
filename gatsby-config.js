@@ -1,6 +1,6 @@
 module.exports = {
 	siteMetadata: {
-		title: 'Yank And Brit Art',
+		title: 'Yank and Brit Art',
 		description: 'Acrylic Paintings and Home Decor',
 		metaDescription: 'Art Blog and Gallery of Katie Rogala',
 	},
