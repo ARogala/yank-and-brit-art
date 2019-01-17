@@ -10,7 +10,7 @@ author: Katie Rogala
 		<img src="../../img/profilePic.jpg" alt="profile picture" />
 	</div>
 	<div class="about__header-taglineBox">
-		<h1>Katie Rogala founder of Yank and Brit Art</h1>
+		<h1>Katie Rogala, founder of Yank and Brit Art</h1>
 	</div>
 </div>
 
