@@ -4,7 +4,6 @@ import Layout from '../components/layout';
 
 class BlogPost extends React.Component {
 	render() {
-		console.log(this.props);
 		const post = this.props.data.markdownRemark;
 		const { previous, next } = this.props.pageContext;
 		return (
