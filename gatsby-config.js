@@ -15,5 +15,6 @@ module.exports = {
 		`gatsby-transformer-remark`,
 		`gatsby-plugin-sass`,
 		`gatsby-plugin-react-helmet`,
+		`gatsby-plugin-netlify-cms`
 	],
 }
