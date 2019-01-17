@@ -23,6 +23,9 @@ to absorb that extra width. This typically makes it much easier to size elements
 defines what 1rem is*/
 html {
   font-size: 62.5%;
+
+  // for footer fixed
+  margin-bottom: 110px;
 }
 
 body {

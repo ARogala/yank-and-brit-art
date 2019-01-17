@@ -19,6 +19,24 @@
 	}
 }
 
+.footer {
+	background: linear-gradient(to right, $hero-color1 100%, $hero-color2 100%);
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	height: 110px;
+	z-index: 10;
+
+	&__icons {
+		padding: 10px;
+	}
+
+	&__icons span {
+		display: block;
+	}
+
+}
+
 @media screen and (min-width: 750px) {
 
 	.header {
