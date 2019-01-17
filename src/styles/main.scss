@@ -1,6 +1,7 @@
 @charset "UTF-8";
 
 @import 'variables';
+@import 'mixins';
 @import 'base';
 @import 'layout';
 @import 'nav';
@@ -9,4 +10,5 @@
 @import 'blog-archive';
 @import 'blog-list';
 @import 'blog-post';
+
 

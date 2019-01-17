@@ -1,13 +1,6 @@
 .home {
-	max-width: $max-width;
-	margin: auto;
-	padding: 10px;
-	& h2 {
-		text-align: center;
-		padding-bottom: 10px;
 
-		font-family: 'Petit Formal Script', cursive;
+	& h1 {
+		@include headline();
 	}
-
-
 }

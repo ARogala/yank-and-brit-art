@@ -5,7 +5,7 @@ date: 2018-10-31T00:00:00.000Z
 author: Katie Rogala
 ---
 
-<h2>Welcome!</h2>
+<h1>Welcome!</h1>
 
 <p>Hi friend, welcome to Yank and Brit Art! I’m so glad you’re here. My name is Katie Rogala, the artist behind Yank and Brit. To learn more about me, please visit the About Me page.</p><br/>
 
