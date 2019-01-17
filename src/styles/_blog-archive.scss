@@ -1,0 +1,62 @@
+@charset "UTF-8";
+
+.archive {
+	width: 90vw;
+	max-width: 650px;
+	margin: auto;
+}
+
+.search {
+
+	&__title {
+		text-align: center;
+	}
+
+	&__label {
+		display: block;
+		text-align: center;
+	}
+
+	&__input {
+		width: 100%;
+		border-radius: 10px;
+		border: 1px solid black;
+		margin: 10px auto 10px auto;
+		padding: 5px;
+	}
+
+	&__input:focus {
+		outline: 2px solid blue;
+	}
+}
+
+.postlist {
+	text-align: center;
+	margin-bottom: 10px;
+
+	&__title {
+		display: block;
+	}
+
+	&__dropdown-li {
+		list-style: none;
+	}
+
+	&__category {
+		text-transform: uppercase;
+		font-weight: bold;
+	}
+
+	&__dropdown-ul {
+		list-style: none;
+	}
+
+	&__dropdown-ul li {
+		padding: 5px;
+	}
+
+	&__single-li {
+		list-style: none;
+		padding: 5px;
+	}
+}
