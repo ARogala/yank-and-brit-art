@@ -1,16 +1,18 @@
-.gatsby-resp-image-wrapper {
-	width: 150px;
-}
 
-.gatsby-resp-image-background-image {
-	border-radius: 50%;
-}
-
-.gatsby-resp-image-image {
-	border-radius: 50%;
-}
 
 .about {
+
+	.gatsby-resp-image-wrapper {
+		width: 150px;
+	}
+
+	.gatsby-resp-image-background-image {
+		border-radius: 50%;
+	}
+
+	.gatsby-resp-image-image {
+		border-radius: 50%;
+	}
 
 	&__header-taglineBox {
 		border-bottom: 2px solid black;
@@ -22,9 +24,6 @@
 }
 
 @media screen and (min-width: 750px) {
-	.gatsby-resp-image-wrapper {
-		margin: 0 auto 0 0 !important;
-	}
 
 	.about {
 
