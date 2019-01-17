@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+.blogpostContainer {
+	width: 90vw;
+	max-width: $max-width;
+
+  & ol {
+    margin-left: 20px;
+  }
+
+  & ul {
+    margin-left: 20px;
+  }
+}
+
+.linkbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
