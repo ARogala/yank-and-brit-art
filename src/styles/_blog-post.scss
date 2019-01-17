@@ -1,8 +1,10 @@
 @charset "UTF-8";
 
 .blogpostContainer {
-	width: 90vw;
-	max-width: $max-width;
+
+  & h1 {
+    text-align: center;
+  }
 
   & ol {
     margin-left: 20px;
