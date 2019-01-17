@@ -45,10 +45,10 @@ collections:
       - { name: body, label: Body, widget: markdown }
   - name: Home
     label: Home
-    folder: src/markdown/index
+    folder: src/markdown/home
     create: false
     fields:
-      - { name: path, label: Path, default: src/markdown/index/ }
+      - { name: path, label: Path, default: src/markdown/home/ }
       - { name: title, label: Title, widget: string }
       - { name: date, label: Date, widget: date }
       - { name: author, label: Author, widget: string }
