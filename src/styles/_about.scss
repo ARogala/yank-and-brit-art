@@ -1,5 +1,46 @@
+.gatsby-resp-image-wrapper {
+	width: 150px;
+}
+
+.gatsby-resp-image-background-image {
+	border-radius: 50%;
+}
+
+.gatsby-resp-image-image {
+	border-radius: 50%;
+}
+
 .about {
+
+	&__header-taglineBox {
+		border-bottom: 2px solid black;
+	}
 	& h1 {
 		@include headline();
+		padding-top: 10px;
+	}
+}
+
+@media screen and (min-width: 750px) {
+	.gatsby-resp-image-wrapper {
+		margin: 0 auto 0 0 !important;
+	}
+
+	.about {
+
+		&__header {
+			display: flex;
+		}
+
+		&__header-imgBox {
+			margin: 10px 20px 10px 10px;
+		}
+
+		&__header-taglineBox {
+			border-bottom: none;
+			display: flex;
+  			justify-content: center;
+  			align-items: center;
+		}
 	}
 }

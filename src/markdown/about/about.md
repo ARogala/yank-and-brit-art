@@ -5,9 +5,14 @@ date: 2018-10-31T00:00:00.000Z
 author: Katie Rogala
 ---
 
-<img src="../../img/profilePic.jpg" alt="profile picture" />
-
-<h1>Katie Rogala founder of Yank and Brit Art</h1>
+<div class="about__header">
+	<div class="about__header-imgBox">
+		<img src="../../img/profilePic.jpg" alt="profile picture" />
+	</div>
+	<div class="about__header-taglineBox">
+		<h1>Katie Rogala founder of Yank and Brit Art</h1>
+	</div>
+</div>
 
 <h1>About Me</h1>
 
