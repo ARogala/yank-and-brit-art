@@ -1,0 +1,45 @@
+backend:
+  name: github
+  repo: ARogala/rogala-designs
+
+media_folder: src/img/uploads
+public_folder: img/uploads
+publish_mode: editorial_workflow
+
+display_url: https://rogala-designs.netlify.com
+
+collections:
+  - name: JavaScript
+    label: JavaScript
+    folder: src/techblog/JavaScript
+    create: true
+    fields:
+      - { name: path, label: Path, default: src/techblog/JavaScript/ }
+      - { name: title, label: Title, widget: string }
+      - { name: date, label: Date, widget: date }
+      - { name: author, label: Author, widget: string }
+      - { name: category, label: Category, widget: string }
+      - { name: subCategory, label: SubCategory, widget: string }
+      - { name: body, label: Body, widget: markdown }
+  - name: WebDevelopment
+    label: WebDevelopment
+    folder: src/techblog/WebDevelopment
+    create: true
+    fields:
+      - { name: path, label: Path, default: src/techblog/WebDevelopment/ }
+      - { name: title, label: Title, widget: string }
+      - { name: date, label: Date, widget: date }
+      - { name: author, label: Author, widget: string }
+      - { name: category, label: Category, widget: string }
+      - { name: subCategory, label: SubCategory, widget: string }
+      - { name: body, label: Body, widget: markdown }
+  - name: About Me
+    label: About Me
+    folder: src/markdown/about
+    create: false
+    fields:
+      - { name: path, label: Path, default: src/markdown/about/ }
+      - { name: title, label: Title, widget: string }
+      - { name: date, label: Date, widget: date }
+      - { name: author, label: Author, widget: string }
+      - { name: body, label: Body, widget: markdown }
