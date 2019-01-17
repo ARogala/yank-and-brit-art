@@ -1,10 +1,54 @@
 .header {
+	background: linear-gradient(to right, $hero-color1 100%, $hero-color2 100%);
+
+	&__imgBoxSmall img {
+		position: absolute;
+		width: 50px;
+		height: 50px;
+	}
+
 	&__titleBox{
-		background: linear-gradient(to right, $hero-color1 100%, $hero-color2 100%);
-		padding: 20px;
+		padding: 20px 10px 20px 55px;
 		text-align: center;
 
-		font-size: $big-font-size;
 		font-family: 'Petit Formal Script', cursive;
 	}
+
+	&__imgBox {
+		display: none;
+	}
+}
+
+@media screen and (min-width: 750px) {
+
+	.header {
+		display: flex;
+
+		&__imgBoxSmall img {
+			display: none;
+		}
+
+		&__titleBox {
+			display: flex;
+  			justify-content: center;
+  			align-items: center;
+
+			font-size: $big-font-size;
+			padding: 20px 0px 20px 0px;
+  			width: 80%;
+		}
+
+		&__imgBox {
+			display: initial;
+			margin: 0 0 0 auto;
+			width: 200px;
+			height: 200px;
+		}
+
+		&__imgBox img {
+			width: 200px;
+			height: 200px;
+		}
+	}
+
 }
