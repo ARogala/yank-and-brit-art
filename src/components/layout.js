@@ -42,7 +42,7 @@ export default ({children}) => (
 					<meta charSet="utf-8" />
 					<title>{`${data.site.siteMetadata.title} - ${data.site.siteMetadata.description}`}</title>
 					<meta name="description" content={data.site.siteMetadata.metaDescription} />
-					<meta name="theme-color" content="#09037d"/>
+					<meta name="theme-color" content="#d1aff5"/>
 
 		  			<link rel="shortcut icon" href={icon} />
 		  			<link href="https://fonts.googleapis.com/css?family=Petit+Formal+Script" rel="stylesheet" />
