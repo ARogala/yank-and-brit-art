@@ -57,7 +57,7 @@ export default ({children}) => (
 					<ul className="nav__list">
 						<div className="nav__item-container">
 							<li className="nav__item-1"><Link to="/"          className="nav__link">Home</Link></li>
-							<li className="nav__item-2"><Link to="/"          className="nav__link">Blog</Link></li>
+							<li className="nav__item-2"><Link to="/blog"          className="nav__link">Blog</Link></li>
 							<li className="nav__item-3"><Link to="/"          className="nav__link">Gallery</Link></li>
 							<li className="nav__item-4"><Link to="/about/"    className="nav__link">About Me</Link></li>
 						</div>

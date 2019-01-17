@@ -25,6 +25,7 @@ class BlogPost extends React.Component {
 					</div>
 					<div>
 						<Link to="/blog" className="paginationLink">Back To Blog</Link>
+						<Link to="/blog-archive" className="paginationLink">Blog Archive</Link>
 					</div>
 					<div>
 						{ next &&
