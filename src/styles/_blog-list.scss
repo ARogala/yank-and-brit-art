@@ -1,8 +1,6 @@
 @charset "UTF-8";
 
 .blog {
-	width: 90vw;
-	max-width: $max-width;
 
 	&__title {
 		text-align: center;
@@ -30,20 +28,10 @@
 		width: 100px;
 		clip-path: circle(38% at 50% 50%);
 	}
-
-	// i may have goten rid of dropdown class. check later
-	.dropdown {
-		list-style: none;
-
-		&__btn:hover {
-			cursor: pointer;
-		}
-	}
 }
 
 .blogLink {
-	background: $hero-color1;
-	background: linear-gradient(45deg, $hero-color1 0%, $hero-color2 50%, $hero-color1 100%);
+	background: black;
 	color: white;
 	font-weight: bold;
 	text-decoration: none;
@@ -52,20 +40,22 @@
 
 	&:hover {
 		text-decoration: underline;
-		background: #61B5ED;
-		color: black;
+		background: $hero-color1;
+	    background: linear-gradient(45deg, $hero-color1 0%, $hero-color2 50%, $hero-color1 100%);
+	    color: black;
 	}
 
 	&:focus {
 		outline: none;
 		text-decoration: underline;
-		background: #61B5ED;
-		color: black;
+		background: $hero-color1;
+	    background: linear-gradient(45deg, $hero-color1 0%, $hero-color2 50%, $hero-color1 100%);
+	    color: black;
 	}
 
-	&:visited {
-		background: lightblue;
-	}
+	// &:visited {
+	// 	background: purple;
+	// }
 }
 
 .paginationLink {
@@ -84,14 +74,16 @@
 
     &:hover {
     	text-decoration: underline;
-    	background: #61B5ED;
+    	background: $hero-color1;
+	    background: linear-gradient(45deg, $hero-color1 0%, $hero-color2 50%, $hero-color1 100%);
     	color: black;
     }
 
     &:focus {
     	outline: none;
     	text-decoration: underline;
-    	background: #61B5ED;
+    	background: $hero-color1;
+	    background: linear-gradient(45deg, $hero-color1 0%, $hero-color2 50%, $hero-color1 100%);
     	color: black;
     }
 }
