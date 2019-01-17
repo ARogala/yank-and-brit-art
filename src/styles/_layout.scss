@@ -19,6 +19,12 @@
 	}
 }
 
+.main {
+	max-width: $max-width;
+	margin: 0px auto auto auto;
+	padding: 10px;
+}
+
 .footer {
 	background: linear-gradient(to right, $hero-color1 100%, $hero-color2 100%);
 	position: fixed;

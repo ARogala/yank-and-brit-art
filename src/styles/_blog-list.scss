@@ -1,0 +1,99 @@
+@charset "UTF-8";
+
+.blog {
+	width: 90vw;
+	max-width: $max-width;
+
+	&__title {
+		text-align: center;
+		border-bottom: 2px solid black;
+		margin-bottom: 10px;
+	}
+
+	&__recent {
+		margin-bottom: 10px;
+	}
+
+	&__post {
+		margin-bottom: 10px;
+		padding: 5px;
+		display: flex;
+	}
+
+	&__imgbox {
+		display: flex;
+  		flex-direction: column;
+  		justify-content: center;
+	}
+
+	&__imgbox  img {
+		width: 100px;
+		clip-path: circle(38% at 50% 50%);
+	}
+
+	// i may have goten rid of dropdown class. check later
+	.dropdown {
+		list-style: none;
+
+		&__btn:hover {
+			cursor: pointer;
+		}
+	}
+}
+
+.blogLink {
+	background: $hero-color1;
+	background: linear-gradient(45deg, $hero-color1 0%, $hero-color2 50%, $hero-color1 100%);
+	color: white;
+	font-weight: bold;
+	text-decoration: none;
+	padding: 2px 4px 2px 4px;
+	border-radius: $border-radius-large;
+
+	&:hover {
+		text-decoration: underline;
+		background: #61B5ED;
+		color: black;
+	}
+
+	&:focus {
+		outline: none;
+		text-decoration: underline;
+		background: #61B5ED;
+		color: black;
+	}
+
+	&:visited {
+		background: lightblue;
+	}
+}
+
+.paginationLink {
+	background: black;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 2px 4px 2px 4px;
+    border-radius: $border-radius-large;
+
+    display: block;
+    width: 75px;
+    height: 50px;
+    margin: 5px;
+    text-align: center;
+
+    &:hover {
+    	text-decoration: underline;
+    	background: #61B5ED;
+    	color: black;
+    }
+
+    &:focus {
+    	outline: none;
+    	text-decoration: underline;
+    	background: #61B5ED;
+    	color: black;
+    }
+}
+
+
