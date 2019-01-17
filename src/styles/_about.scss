@@ -1,7 +1,4 @@
 .about {
-	max-width: $max-width;
-	margin: auto;
-	padding: 10px;
 	& h1 {
 		@include headline();
 	}
