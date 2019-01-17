@@ -5,7 +5,7 @@ date: 2018-10-31T00:00:00.000Z
 author: Katie Rogala
 ---
 
-<h2>About Me</h2>
+<h1>About Me</h1>
 
 <p>I have always loved art and DIY. I enjoy everything from making gifts and knickknacks for the home to upcycling vintage clothing and other items. Flea markets and secondhand stores are my happy place! I am a wife, follower of Jesus, and an animal lover.</p><br/>
 

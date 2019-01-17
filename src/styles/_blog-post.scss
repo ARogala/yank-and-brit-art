@@ -3,7 +3,7 @@
 .blogpostContainer {
 
   & h1 {
-    text-align: center;
+    @include headline();
   }
 
   & ol {

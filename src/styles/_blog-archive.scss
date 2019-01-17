@@ -7,6 +7,10 @@
 
 .search {
 
+	& h1 {
+		@include headline();
+	}
+
 	&__title {
 		text-align: center;
 	}
