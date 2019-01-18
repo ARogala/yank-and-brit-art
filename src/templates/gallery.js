@@ -6,16 +6,19 @@ import Layout from '../components/layout';
 
 
 class GalleryComponent extends React.Component {
+
 	buildImages() {
 		const images = this.props.data.allFile.edges;
 		const imgDOM = images.map((img,index)=>{
 			return(
-				<Img className="gallery__img" key={index} fluid={img.node.childImageSharp.fluid} />
+				<div className="gallery__imgBox" key={index}>
+					<Img className="gallery__imgBox-img" fluid={img.node.childImageSharp.fluid} />
+				</div>
 			);
-
 		});
 		return imgDOM;
 	}
+
 	render() {
 		const imgDOM = this.buildImages();
 		const { currentPage, numGalleryPages } = this.props.pageContext;
@@ -27,22 +30,21 @@ class GalleryComponent extends React.Component {
 			<Layout>
 				<div className="gallery">
 					{imgDOM}
-					<div className="linkbox">
-						<div>
-							{
-								!isFirst &&
-								<Link to={prevPage} rel="prev" className="paginationLink">Previous Page</Link>
-							}
-						</div>
-						<div>
-							{
-								!isLast &&
-								<Link to={nextPage} rel="next" className="paginationLink">Next Page</Link>
-							}
-						</div>
+				</div>
+				<div className="linkbox">
+					<div>
+						{
+							!isFirst &&
+							<Link to={prevPage} rel="prev" className="paginationLink">Previous Page</Link>
+						}
+					</div>
+					<div>
+						{
+							!isLast &&
+							<Link to={nextPage} rel="next" className="paginationLink">Next Page</Link>
+						}
 					</div>
 				</div>
-
 			</Layout>
 		);
 	}

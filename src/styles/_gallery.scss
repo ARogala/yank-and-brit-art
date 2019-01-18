@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+.gallery {
+	&__imgBox {
+
+		& img {
+			padding-bottom: 10px;
+		}
+	}
+}
+
+@media screen and (min-width: 750px) {
+	.gallery {
+		display: flex;
+		flex-wrap: wrap;
+		&__imgBox {
+			width: 49%;
+    		margin: auto;
+		}
+	}
+}
