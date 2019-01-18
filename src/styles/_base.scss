@@ -26,6 +26,9 @@ html {
 
   // for footer fixed
   margin-bottom: 110px;
+
+  background: $background-color1;
+  background: linear-gradient(90deg, $background-color1 0%, $background-color2 50%, $background-color1 100%);
 }
 
 body {
@@ -35,6 +38,5 @@ body {
   font-family: 'IBM Plex Serif', serif;
   font-weight: 600;
 
-  background: $background-color1;
-  background: linear-gradient(90deg, $background-color1 0%, $background-color2 50%, $background-color1 100%);
+
 }
