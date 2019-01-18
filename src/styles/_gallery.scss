@@ -1,5 +1,6 @@
 @charset "UTF-8";
 
+// fix odd bug of no bg color on mobile
 .main {
 	background: $background-color1;
     background: linear-gradient(90deg, $background-color1 0%, $background-color2 50%, $background-color1 100%);
