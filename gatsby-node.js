@@ -45,6 +45,13 @@ exports.createPages = ({ graphql, actions }) => {
 								}
 							}
 						}
+						galleryImgs: allFile(filter: { extension: { eq: "jpg" }, relativeDirectory: {eq: "img/gallery"} }) {
+							edges {
+								node {
+									relativePath
+								}
+							}
+						}
 					}
 				`
 			).then(result => {
@@ -53,7 +60,7 @@ exports.createPages = ({ graphql, actions }) => {
 					reject(result.errors);
 				}
 
-				// Create blog posts pages.
+				// Create blog-posts pages.
 				const posts = result.data.posts.edges;
 				posts.forEach(({node}, index) => {
 				const previous = index === posts.length - 1 ? null : posts[index + 1].node;
@@ -71,7 +78,7 @@ exports.createPages = ({ graphql, actions }) => {
 					});
 				});
 
-				/* Create blog pages
+				/* Create blog-list pages
 				create enough pages to fit all posts (10posts / 2 postsPerPage) for 5 pages
 				limit the graphql query to postsPerPage
 				Skip the graphql query to the posts on that given page
@@ -86,6 +93,25 @@ exports.createPages = ({ graphql, actions }) => {
 							limit: postsPerPage,
 							skip: index*postsPerPage,
 							numPages,
+							currentPage: index + 1
+						}
+					});
+				});
+
+				// create gallery pages
+				// note only use above query for the count of the number of
+				// images in folder
+				const galleryImgs = result.data.galleryImgs.edges;
+				const picsPerPage = 10;
+				const numGalleryPages = Math.ceil(galleryImgs.length / picsPerPage);
+				Array.from({length: numGalleryPages }).forEach((_, index) => {
+					createPage({
+						path: index === 0 ? `/gallery` : `/gallery/${index + 1}`,
+						component: path.resolve('./src/templates/gallery.js'),
+						context: {
+							limit: picsPerPage,
+							skip: index*picsPerPage,
+							numGalleryPages: numGalleryPages,
 							currentPage: index + 1
 						}
 					});
