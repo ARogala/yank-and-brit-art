@@ -1,0 +1,2 @@
+# Redirect default Netlify subdomain to primary domain
+https://yankandbritart.netlify.com/* https://www.yankandbritart.net/:splat 301!
