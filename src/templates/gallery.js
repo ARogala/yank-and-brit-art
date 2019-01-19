@@ -63,7 +63,7 @@ export const galleryPics = graphql`
 			edges {
 				node {
 					childImageSharp {
-						fluid(maxWidth: 1000, quality: 100) {
+						fluid(maxWidth: 500, quality: 100) {
 							...GatsbyImageSharpFluid
 						}
 					}
