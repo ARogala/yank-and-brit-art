@@ -1,6 +1,5 @@
 {
   "name": "yank-and-brit-art",
-  "private": true,
   "description": "Art Blog and Gallery of Katie Rogala",
   "version": "0.1.0",
   "license": "UNLICENSED",
@@ -35,5 +34,5 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/ARogala/yank-and-brit-art"
-  },
+  }
 }
