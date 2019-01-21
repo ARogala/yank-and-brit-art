@@ -5,4 +5,46 @@
 	& h1 {
 		@include headline();
 	}
+
+	&__slider {
+		margin: 10px auto 10px auto;
+		height: 225px;
+		width: 300px;
+	}
+
+	&__slider-img {
+		height: 225px;
+		width: auto;
+		margin: auto;
+		border-radius: $border-radius-large;
+	}
+}
+
+//breakpoint for smaller phones
+@media screen and (max-width: 370px) {
+	.home {
+
+		&__slider {
+			width: 260px;
+		}
+	}
+}
+//for large screens
+@media screen and (min-width: 751px) {
+	.home {
+		display: flex;
+
+		&__slider {
+			height: 350px;
+			width: 360px;
+			margin: 0px 30px 0px 40px;
+		}
+
+		&__slider-img {
+			height: 350px;
+			width: auto;
+			margin: auto;
+			border-radius: $border-radius-large;
+		}
+	}
 }
