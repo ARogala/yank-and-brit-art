@@ -9,8 +9,8 @@ publish_mode: editorial_workflow
 display_url: https://yankandbritart.netlify.com
 
 collections:
-  - name: AcrylicPaintings
-    label: AcrylicPaintings
+  - name: Acrylic Paintings
+    label: Acrylic Paintings
     folder: src/blog/AcrylicPaintings
     create: true
     fields:
@@ -27,6 +27,18 @@ collections:
     create: true
     fields:
       - { name: path, label: Path, default: src/blog/DIY/ }
+      - { name: title, label: Title, widget: string }
+      - { name: date, label: Date, widget: date }
+      - { name: author, label: Author, widget: string }
+      - { name: category, label: Category, widget: string }
+      - { name: subCategory, label: SubCategory, widget: string }
+      - { name: body, label: Body, widget: markdown }
+  - name: Home Decor
+    label: Home Decor
+    folder: src/blog/HomeDecor
+    create: true
+    fields:
+      - { name: path, label: Path, default: src/blog/HomeDecor/ }
       - { name: title, label: Title, widget: string }
       - { name: date, label: Date, widget: date }
       - { name: author, label: Author, widget: string }
