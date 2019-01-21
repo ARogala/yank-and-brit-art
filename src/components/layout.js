@@ -3,7 +3,8 @@ import { StaticQuery, Link, graphql } from 'gatsby';
 import { Helmet } from 'react-helmet';
 
 import icon from '../img/logoSmall.png';
-import etsy from '../img/etsy.png';
+import etsy from '../img/etsy.svg';
+import instagram from '../img/instagram.svg';
 
 import logoSmall from '../img/logoSmall.jpg';
 import logoLarge from '../img/logoLarge.png';
@@ -87,6 +88,7 @@ export default ({children}) => (
 						<div className="footer__icons">
 							<span>Find me on:</span>
 							<a href="https://www.etsy.com/shop/yankandbritart"><img src={etsy} alt="etsy" /></a>
+							<a href="https://www.instagram.com/yankandbritart/"><img src={instagram} alt="instagram" /></a>
 						</div>
 					</footer>
 				</div>

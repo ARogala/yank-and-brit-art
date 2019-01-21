@@ -32,7 +32,7 @@
 	position: fixed;
 	bottom: 0;
 	width: 100%;
-	height: 110px;
+	height: 95px;
 	z-index: 10;
 
 	&__icons {
@@ -41,6 +41,13 @@
 
 	&__icons span {
 		display: block;
+		margin: 0px 0px 5px 10px;
+	}
+
+	&__icons img {
+		width: 50px;
+		height: 50px;
+		margin: 2px;
 	}
 
 }
