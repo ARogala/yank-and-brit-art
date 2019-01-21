@@ -49,17 +49,17 @@ export default ({children}) => (
 		  			<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Serif:400,600" rel="stylesheet" />
 				</Helmet>
 				<nav className="nav">
-					<Link to="/" tabIndex="-1"><img className="nav__imgLink" src={logoSmall} alt="logo" /></Link>
+					<img className="nav__imgLink" src={logoSmall} alt="logo" />
 					<input type="checkbox" className="nav__checkbox" id="navi-toggle" />
 					<label htmlFor="navi-toggle" className="nav__button" aria-haspopup="true" role="button" tabIndex="0" aria-label="navigation menu" onKeyPress={()=>toggleNav()}>
 						<span className="nav__icon">&nbsp;</span>
 					</label>
 					<ul className="nav__list">
 						<div className="nav__item-container">
-							<li className="nav__item-1"><Link to="/"          className="nav__link">Home</Link></li>
-							<li className="nav__item-2"><Link to="/blog"          className="nav__link">Blog</Link></li>
-							<li className="nav__item-3"><Link to="/gallery"          className="nav__link">Gallery</Link></li>
-							<li className="nav__item-4"><Link to="/about/"    className="nav__link">About Me</Link></li>
+							<li className="nav__item-1"><Link to="/"        className="nav__link">Home</Link></li>
+							<li className="nav__item-2"><Link to="/blog"    className="nav__link">Blog</Link></li>
+							<li className="nav__item-3"><Link to="/gallery" className="nav__link">Gallery</Link></li>
+							<li className="nav__item-4"><Link to="/about/"  className="nav__link">About Me</Link></li>
 						</div>
 					</ul>
 				</nav>
