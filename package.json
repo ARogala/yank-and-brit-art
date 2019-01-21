@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-hello-world",
+  "name": "yank-and-brit-art",
   "private": true,
-  "description": "A simplified bare-bones starter for Gatsby",
+  "description": "Art Blog and Gallery of Katie Rogala",
   "version": "0.1.0",
-  "license": "MIT",
+  "license": "UNLICENSED",
   "scripts": {
     "develop": "gatsby develop",
     "start": "npm run develop",
@@ -28,13 +28,12 @@
     "react": "^16.5.1",
     "react-dom": "^16.5.1",
     "react-helmet": "^5.2.0",
+    "react-slick": "^0.23.2",
+    "slick-carousel": "^1.8.1",
     "sort-by": "^1.2.0"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-hello-world"
+    "url": "https://github.com/ARogala/yank-and-brit-art"
   },
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
-  }
 }
