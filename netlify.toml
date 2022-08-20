@@ -1,5 +1,5 @@
-[[redirects]]
-  from = "https://yankandbritart.netlify.com/*"
-  to = "https://www.yankandbritart.net/:splat"
-  status = 302
-  force = true
+#[[redirects]]
+#  from = "https://yankandbritart.netlify.com/*"
+#  to = "https://www.yankandbritart.net/:splat"
+#  status = 302
+#  force = true
